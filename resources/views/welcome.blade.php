@@ -42,9 +42,9 @@
                 </div>
 
                 <div class="mt-6 px-12">
-                    <h2 class="text-2xl font-bold">Sponsors</h2>
+                    <h2 class="text-2xl font-bold">Featured Sponsors</h2>
 
-                    <div class="flex flex-col sm:flex-row gap-16 items-center justify-center mt-8">
+                    <div class="flex flex-col sm:flex-row gap-16 items-center justify-center py-8">
                         <a href="https://beyondco.de/?utm_source=nativephp&utm_medium=logo&utm_campaign=nativephp">
                             <img src="/img/sponsors/beyondcode.png" class="block dark:hidden">
                             <img src="/img/sponsors/beyondcode-dark.png" class="hidden dark:block">
@@ -56,23 +56,29 @@
                         </a>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row gap-16 items-center justify-center mt-8">
+                    <h2 class="text-2xl font-bold py-8">Corporate Sponsors</h2>
+
+                    <div class="flex flex-col sm:flex-row sm:flex-wrap gap-x-16 gap-y-8 items-center justify-center">
                         <a href="https://www.redgalaxy.co.uk/">
                             <img src="/img/sponsors/redgalaxy.svg" class="block h-12">
                         </a>
 
-                        <a href="https://sevalla.com/?utm_source=nativephp&utm_medium=Referral&utm_campaign=homepage">
+                        <a href="https://sevalla.com/?utm_source=nativephp&utm_medium=Referral&utm_campaign=homepage" class="shrink-0">
                             <img src="/img/sponsors/sevalla.png" class="block h-12 dark:hidden">
                             <img src="/img/sponsors/sevalla-dark.png" class="h-12 hidden dark:block">
                         </a>
 
-                        <a href="https://serverauth.com/">
-                            <img src="/img/sponsors/serverauth.svg" class="block h-12 fill-[#042340] darK:fill-white">
+                        <a href="https://serverauth.com/" class="block h-12 fill-[#042340] dark:fill-white">
+                            {!! file_get_contents(public_path('/img/sponsors/serverauth.svg')) !!}
+                        </a>
+
+                        <a href="https://www.kaashosting.nl/?lang=en" class="block h-10 fill-[#042340] dark:fill-white">
+                            {!! file_get_contents(public_path('/img/sponsors/kaashosting.svg')) !!}
                         </a>
                     </div>
 
-                    <a href="https://github.com/sponsors/simonhamp" target="_blank" class="inline-block px-4 py-1.5 text-xs font-semibold text-black bg-white border rounded mt-6">
-                        Add your logo here
+                    <a href="/docs/getting-started/sponsoring" class="inline-block px-4 py-1.5 text-xs font-semibold text-black bg-white border rounded mt-6">
+                        Want your logo here?
                     </a>
                 </div>
             </header>
